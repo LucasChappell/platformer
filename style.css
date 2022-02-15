@@ -1,0 +1,14 @@
+html {
+    background-color: rgb(31, 31, 31);
+}
+#gameArea {
+    width: 1000px;
+    height: 600px;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px;
+    background-color: black;
+    position: absolute;
+    left: 21%;
+    top: 10%;
+}
