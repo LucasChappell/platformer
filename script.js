@@ -20,18 +20,18 @@ function square(startX, startY) {
    
     requestAnimationFrame(moveSquare)
     function moveSquare(){
-        if (box.x > canvas.width - (boxWidth / 2) -7.5 || box.x < (boxWidth / 2) - 6)  {
+        if (box.x > canvas.width - 50 || box.x < 0)  {
             moveX = -moveX;
         }
     box.x += moveX;
     box.y += moveY;
     ctx.beginPath;
-    ctx.fillStyle = 'White';
+    ctx.fillStyle = 'DarkGrey';
     ctx.fillRect(box.x,box.y,boxWidth,boxHeight);
     ctx.endPath;
-    if ((box.y + 71) >= canvas.height){
+    if ((box.y + 60) >= canvas.height){
         moveY = 0;
-        box.y = 932;
+        box.y = 950;
     } else {
         moveY += gravity;
     }
@@ -57,3 +57,6 @@ function clearScreen(){
     }
 }
 levelStart()
+
+
+
